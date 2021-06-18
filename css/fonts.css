@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Whitney";
+  src: local("Whitney Medium Regular"), local("Whitney-Medium"), url("fonts/whitney/Whitney-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/whitney/Whitney-Medium.woff") format("woff"), url("fonts/whitney/Whitney-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<body> 
+	<div class="header">
+		<div class="header__body">
+			<div class="nav">
+				<div class="nav__logo">
+					<div class="nav__img">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav__text">TEST</div>
+				</div>
+				<div class="nav__link link">
+					<div class="link__item">
+						<span class="link__text">Клиентам</span>
+					</div>
+					<div class="link__item" id="vdk-popup">
+						<img src="img/account.png" alt="" class="link__img">
+						<span class="link__text">Войти</span>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content__body">
+					<div class="content__column">
+						<div class="content__title">Подбор авто в лизинг по выгодной цене</div>
+						<div class="content__subtitle">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</div>
+						<div class="content__button">
+							<div class="content__text">
+								Регистрация
+							</div>
+						</div>
+					</div>
+					<div class="content__img">
+						<img src="img/content.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">	
+		<div class="main__body">
+			<h1 class="main__title">Меньше условий – больше возможностей</h1>
+			<div class="body">
+				<div class="body__item">
+					<div class="body__column">
+						<div class="body__title">Экономия времени</div>
+						<div class="body__text">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</div>
+					</div>
+					<div class="body__img"><img src="img/time.png"></div>
+				</div>
+				<div class="body__item">
+					<div class="body__column">
+						<div class="body__title">Никаких задержек</div>
+						<div class="body__text">Вы получаете запросы сразу же после отправки клиентом.</div>
+					</div>
+					<div class="body__img"><img src="img/speed.png"></div>
+				</div>
+				<div class="body__item">
+					<div class="body__column">
+						<div class="body__title">Максимальная информативность</div>
+						<div class="body__text">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</div>
+					</div>
+					<div class="body__img"><img src="img/inf.png"></div>
+				</div>
+				<div class="body__item">
+					<div class="body__column">
+						<div class="body__title">Удобство общения</div>
+						<div class="body__text">Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.</div>
+					</div>
+					<div class="body__img"><img src="img/chat.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer__body">
+			<div class="item">
+				<div class="item__column">
+					<div class="item__title">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</div>
+					<div class="item__button">
+						<div class="item__text">Регистрация</div>
+					</div>
+				</div>
+				<div class="item__img"><img src="img/footer.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__container">
+				<div class="popup__close">
+					<img src="img/icon/close.svg" alt="">
+				</div>				
+				<div class="popup__title">
+					Авторизация
+				</div>
+				<div class="wrap">
+					<div class="wrap__item">
+						<div class="wrap__text">E-mail</div>
+						<div class="wrap__input"><input type="text" placeholder="Введите e-mail"></div>
+					</div>
+					<div class="wrap__item">
+						<div class="wrap__text">Пароль</div>
+						<div class="wrap__input"><input type="text" placeholder="Введите Пароль"></div>
+					</div>
+					<div class="wrap__item">
+						<div class="wrap__button">
+							<div class="wrap__click">
+								Войти
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#vdk-popup").click(function(){
+				$(".popup").fadeIn();
+			});
+			$(".popup__close").click(function(){
+				$(".popup").fadeOut();
+			})
+		});
+	</script>			
+</body>
+</html>
